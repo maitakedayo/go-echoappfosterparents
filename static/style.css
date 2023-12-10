@@ -112,6 +112,7 @@ img {
   padding-top: 15px;
   padding-bottom: 15px;
   border-bottom: 1px solid #ddd;
+  list-style-type: none;
 }
 
 .bl_vertPosts_item:first-child {
