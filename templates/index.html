@@ -1,0 +1,164 @@
+{{define "index"}}
+<!doctype html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <title>catfosterparents</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css"><!-- リセットCSSの読込み -->
+  <link rel="stylesheet" type="text/css" href="/static/style.css" media="all" />
+</head>
+
+<body>
+  <main>
+    <section class="ly_topcont">
+      <div class="bl_topcont ly_cont__col">
+  
+        <article>
+          <section class="hp_bgcBase__gray">
+            <div class="ly_cont">
+              <h2 class="el_lv2Heading hp_smSpace">
+                スコティッシュフォールドクリームタビー 里親募集
+              </h2>
+              <div class="bl_media ly_cont__col">
+                <figure class="bl_media_imgWrapper">
+                  <img alt="写真：猫1" src="static/cat1.png">
+                </figure>
+                <div class="bl_media_body">
+                  <h3 class="bl_media_ttl">
+                    簡単な紹介
+                  </h3>
+                  <p class="bl_media_txt">
+                    5歳の素敵なスコティッシュフォールドクリームタビーの里親を募集しています。この猫はすでに去勢手術を受けており、引っ掻き癖や噛み癖は一切ありません。その上、非常におとなしい性格です。<br>
+                    日頃のお世話は、愛情と定期的なブラッシングで十分です。おとなしい性格のため、新しい家族とのすぐに打ち解けることが期待できます。
+                  </p>
+                </div>
+                <!-- /.bl_media_body -->
+              </div>
+              <!-- /.bl_media -->
+            </div>
+            <!-- /.ly_cont -->
+          </section>
+          <section class="hp_bgcBase__orange">
+            <div class="ly_cont">
+              <h2 class="el_lv2Heading hp_smSpace">
+                スコティッシュフォールドクリームタビー 里親募集
+              </h2>
+              <div class="bl_media bl_media__rev ly_cont__col">
+                <figure class="bl_media_imgWrapper">
+                  <img alt="写真：猫2" src="static/cat2.png">
+                </figure>
+                <div class="bl_media_body">
+                  <h3 class="bl_media_ttl">
+                    簡単な紹介
+                  </h3>
+                  <p class="bl_media_txt">
+                    血統書付きのスコティッシュフォールドクリームタビー！家猫です。<br>
+                    この素敵な猫との新しい出会いに興味をお持ちの方は、お気軽にご応募・お問い合わせください。
+                  </p>
+                </div>
+                <!-- /.bl_media_body -->
+              </div>
+              <!-- /.bl_media bl_media__rev -->
+            </div>
+            <!-- /.ly_cont -->
+          </section>
+
+          <section class="hp_bgcBase__gray">
+            <div class="ly_cont">
+              <ul class="bl_vertPosts">
+              {{range .Comments}}
+                <li class="bl_vertPosts_item">
+                  <div class="bl_vertPosts_header">
+                    <time class="bl_vertPosts_date" datetime="">{{FormatDateTime .Created}}</time>
+                    <ul class="bl_vertPosts_labels">
+                      <li>
+                        <span class="el_label">お知らせ</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- /.bl_vertPosts_header -->
+                  <a class="bl_vertPosts_ttl" href="#">{{.Content}}</a>
+                </li>
+              {{end}}
+              </ul>
+            </div>
+            <!-- /.ly_cont -->
+          </section>
+  
+          <section class="">
+            <div class="ly_cont ly_cont__col">
+              <div class="bl_cta">
+                <h2 class="bl_cta_ttl">
+                  お気軽にお問い合わせください
+                </h2>
+                <p class="bl_cta_txt">
+                  気になることがございましたら、お気軽にお問い合わせください
+                </p>
+                <a class="el_btn" href="#">X(旧twitter)で問い合わせする</a>
+              </div>
+              <!-- /.bl_cta -->
+            </div>
+            <!-- /.ly_cont ly_cont__col -->
+          </section>
+        </article>
+  
+        <div class="bl_cardUnit bl_cardUnit__col3">
+          <div class="bl_card">
+            <figure class="bl_card_imgWrapper">
+              <img alt="写真：cat1画面" src="static/cat1.png">
+            </figure>
+            <div class="bl_card_body">
+              <h3 class="bl_card_ttl">
+                画像その1
+              </h3>
+              <p class="bl_card_txt">
+                窓にもたれ掛かるポーズ。
+              </p>
+            </div>
+            <!-- /.bl_card_body -->
+          </div>
+          <!-- /.bl_card -->
+          <div class="bl_card">
+            <figure class="bl_card_imgWrapper">
+              <img alt="写真：cat2画面" src="static/cat2.png">
+            </figure>
+            <div class="bl_card_body">
+              <h3 class="bl_card_ttl">
+                画像その2
+              </h3>
+              <p class="bl_card_txt">
+                スフィンクスポーズ。
+              </p>
+            </div>
+            <!-- /.bl_card_body -->
+          </div>
+          <!-- /.bl_card -->
+          <div class="bl_card">
+            <figure class="bl_card_imgWrapper">
+              <img alt="写真：cat3画面" src="static/cat3.png">
+            </figure>
+            <div class="bl_card_body">
+              <h3 class="bl_card_ttl">
+                画像その3
+              </h3>
+              <p class="bl_card_txt">
+                睡眠中でリラックスポーズ。
+              </p>
+            </div>
+            <!-- /.bl_card_body -->
+          </div>
+          <!-- /.bl_card -->
+        </div>
+        <!-- /.bl_cardUnit bl_cardUnit__col3 -->   
+  
+      </div>
+      <!-- /.bl_topcont ly_cont__col-->
+    </section>
+  </main>
+</body>
+
+</html>
+{{end}}
